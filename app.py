@@ -40,6 +40,6 @@ if uploaded_file:
     st.subheader("Matching new designs:")
     if not matched.empty:
         for _, row in matched.iterrows():
-            st.image("images/" + row["filename"], caption=f"{row['name']} – {row['weight']} g", use_container_width=True)
+            st.image(row ["filename"], caption=f"{row['name']} – {row['weight']} g", use_container_width=True)
     else:
         st.write("No matching designs found.")
