@@ -8,10 +8,10 @@ import math
 st.set_page_config(page_title="From Old to Bold", layout="centered")
 
 # Centered logo
-st.markdown(
-    "<div style='text-align: center;'><img src='logo.png' width='180'></div>",
-    unsafe_allow_html=True
-)
+with st.container():
+    cols = st.columns(3)
+    with cols[1]:  # Die mittlere von drei Spalten
+        st.image("logo.png", width=200)
 
 st.write("Upload a photo of your old piece of jewelry. Our AI estimates the weight and suggests matching new designs.")
 
