@@ -11,7 +11,7 @@ st.set_page_config(page_title="From Old to Bold", layout="centered")
 with st.container():
     cols = st.columns(3)
     with cols[1]:  # Die mittlere von drei Spalten
-        st.image("logo.png", width=200)
+        st.image("logo.png", width=180)
 
 st.write("Upload a photo of your old piece of jewelry. Our AI estimates the weight and suggests matching new designs.")
 
